@@ -2,36 +2,35 @@
 
 Welcome to the Scrabble challenge!
 
-## Learning Objectives
-- Build a simple program using functions, loops, and flow control
-- Use `git` & GitHub to commit work and open a Pull Request
+## About the project
+This challenge was to be completed before the start of the Digital Futures academy. The objectives of the project were to build a simple program using functions, loops and flow control, and to use `Git` and `GitHub`.\
+This was my first experience coding in Java Script, in June 2022. 
+</br></br>
 
-## Instructions
+## Built with
+Vanilla Java Script. 
+</br></br>
 
-1. Fork this repository and then:
-```sh
-$ git clone git@github.com:digital-futures-academy/scrabble-challenge.git && cd scrabble-challenge
-$ npm install # installs dependencies listed in package.json
+## Getting started
+First clone this repository to your local machine.\
+Run this command to install all the dependencies:
 ```
-2. Run the tests from your project root directory. There should be a lot of failures to begin with. You can run your test suite in a few ways:
-```sh
+$ npm install
+```
+
+Run this command to test the project:
+```
 $ npm test
-# or
-$ jasmine
-# or run jasmine directly
-$ ./node_modules/jasmine/bin/jasmine.js
 ```
-3. In GitHub, [open a Pull Request](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request) from your forked repository to the challenge repository.
-4. Implement the criteria below locally and [push your code](https://docs.github.com/en/github/managing-files-in-a-repository/adding-a-file-to-a-repository-using-the-command-line) to your repository! Every push to a branch that has an open Pull Request will update it automatically with your changes.
-5. Check the status of the automated tests on the Pull Request - update your implementation if needed.
+_Note: at the time of writting this program I didn't know about testing (how to write tests nor how to run them), hence the console logs at the bottom of the file._\
+\
+The file `testing.js` is to be ignored. This was the rudimental way I had of doing what branches do!
+</br></br>
 
-# Task
-
+## Requirements
 Given a word, compute the scrabble score for that word.
 
 ##### Letter Values
-
-You'll need these:
 
 | Letter                        | Value  |
 | ----                          |  ----  |
@@ -60,7 +59,7 @@ And to total:
 = 14
 ```
 
-## Acceptance Criteria
+### Acceptance Criteria
 
 ```javascript
 let scrabble = new Scrabble('')
@@ -88,9 +87,19 @@ let scrabble = new Scrabble('OXYPHENBUTAZONE')
 scrabble.score() // => 41
 ```
 
-## Extended Acceptance Criteria
+### Extended Acceptance Criteria
 > Each `Scrabble` method should be no more than 5 lines and contain no more than 5 operations.
 
 > You can play a double or a triple letter.
 
 > You can play a double or a triple word.
+</br></br>
+
+## Review
+This was a huge learning experience for me. It was the first time I was writting any code in a programming language and I got to use classes, objects, loops, conditional statements...\
+\
+If I were to attempt this today, I would cover the extended criteria and would re-write the score function to be easier to read. I would also re-write the points object, to use arrays that hold every letter that share the same score.
+</br></br>
+
+## Acknowledgements 
+W3 Schools- https://www.w3schools.com/js/
